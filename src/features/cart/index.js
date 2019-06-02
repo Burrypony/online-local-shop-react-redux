@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 
 function sort(items) {
-    return items.sort((a, b) => a.id < b.id)
+    return items.sort((a, b) => a.id < b.id ? -1: 1)
 }
 
 function Cart(props) {
